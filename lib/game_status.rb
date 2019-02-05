@@ -34,11 +34,11 @@ def won?(board)
 end
 
 def full?(board)
-  board.none?{|space| space === " "} && !won?(board)
+  board.none?{|space| space === " "}
 end
 
 def draw?(board)
-  full?(board)
+  full?(board) && !won?(board)
 end
 
 def over?(board)
