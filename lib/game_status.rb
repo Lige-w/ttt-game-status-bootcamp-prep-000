@@ -43,6 +43,7 @@ end
 
 def over?(board)
   draw?(board) || won?(board)
+end
 
 def winner(board)
   winning_indices = won?(board)
